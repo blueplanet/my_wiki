@@ -10,3 +10,6 @@
 ## 複数DBの場合
 - [ ] キャッシュは、接続DB単位で分けている？
 - [ ] connection はどこで新規している？
+
+## 参考リンク
+- [[Ruby] 例えば、ActiveRecord の connection_pool を止める - sonots:blog](http://blog.livedoor.jp/sonots/archives/38797925.html)
