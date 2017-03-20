@@ -4,9 +4,10 @@
   - [Caching with Rails: An Overview — Ruby on Rails Guides](http://guides.rubyonrails.org/caching_with_rails.html#sql-caching)
 - SQL+条件値をキーとしてキャッシュされる
 - 疑問
-  - [ ] どこのキャッシュしている？
-  - [ ] どうやってレスポンスが終わったら消える？
-  
+  - [ ] どこにキャッシュしている？
+  - [x] どうやってレスポンスが終わったら消える？  
+    - [rails/query_cache.rb at master · rails/rails](https://github.com/rails/rails/blob/master/activerecord/lib/active_record/query_cache.rb) の `complete` メソッドでクリアしている
+    
 ## 複数DBの場合
 - [x] キャッシュは、接続DB単位で分けている？  
 　　  - 違う。リクエスト単位でキャッシュする
