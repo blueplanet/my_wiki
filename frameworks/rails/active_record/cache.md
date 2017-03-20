@@ -9,9 +9,9 @@
   
 ## 複数DBの場合
 - [x] キャッシュは、接続DB単位で分けている？
-  - 違う。リクエスト単位でキャッシュする
+　　  - 違う。リクエスト単位でキャッシュする
 - [x] connection はどこで新規している？
-  - そのリクエストの中、最初のクエリが発行される時connectionを取得する
+ 　　 - そのリクエストの中、最初のクエリが発行される時connectionを取得する
   
 ## 参考リンク
 - [[Ruby] 例えば、ActiveRecord の connection_pool を止める - sonots:blog](http://blog.livedoor.jp/sonots/archives/38797925.html)
