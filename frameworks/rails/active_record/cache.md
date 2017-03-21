@@ -7,9 +7,12 @@
   - [x] どこにキャッシュしている？  
     - [rails/query_cache.rb at 0ce641839aa59d8c8306ec21cfd5f31aaa9b169c · rails/rails](https://github.com/rails/rails/blob/0ce641839aa59d8c8306ec21cfd5f31aaa9b169c/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb) の `cache_sql` でキャッシュしている    
   - [ ] QueryCacheのインスタンスはいつ、どこで作成される？
+    - [x] [rails/query_cache.rb at 0ce641839aa59d8c8306ec21cfd5f31aaa9b169c · rails/rails](https://github.com/rails/rails/blob/0ce641839aa59d8c8306ec21cfd5f31aaa9b169c/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb#L47) で　@query_cache を hash として初期化する
+
   - [x] どうやってレスポンスが終わったら消える？   
-    - [rails/query_cache.rb at master · rails/rails](https://github.com/rails/rails/blob/master/activerecord/lib/active_record/query_cache.rb) の `complete` メソッドでクリアしている
-    
+    - [rails/query_cache.rb at master · rails/rails](https://github.com/rails/rails/blob/master/activerecord/lib/active_record/query_cache.rb) の `complete` メソッドで `disable_query_cache` 呼んでる
+    - [rails/query_cache.rb at 0ce641839aa59d8c8306ec21cfd5f31aaa9b169c · rails/rails](https://github.com/rails/rails/blob/0ce641839aa59d8c8306ec21cfd5f31aaa9b169c/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb#L66) で `clear_query_cache` を実施する
+
 ## 複数DBの場合
 - [x] キャッシュは、接続DB単位で分けている？  
 　　  - 違う。リクエスト単位でキャッシュする
