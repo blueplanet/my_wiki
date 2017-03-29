@@ -5,3 +5,6 @@
 
 ## 疑問
 - [ ] そもそも、 docker for mac の実行イメージは **どこかで** 仮想マシンで Linux を実行している？
+
+## Docker + phantomjs
+- [ ] 使えるかも？ [wernight/docker-phantomjs: PhantomJS 2 non-root container](https://github.com/wernight/docker-phantomjs)
