@@ -1,0 +1,4 @@
+backend:
+  name: github
+  repo: blueplanet/my_wiki
+  branch: master
